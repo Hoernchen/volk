@@ -8,7 +8,7 @@ void volk_get_config_path(char *path)
     if (!path) return;
     const char *suffix = "/.volk/volk_config";
 #ifdef ANDROID
-    strncpy(path, "/sdcard", 7);
+    strncpy(path, "/sdcard", 8);
     strncat(path, suffix, 18);
 #else
     char *home = NULL;
